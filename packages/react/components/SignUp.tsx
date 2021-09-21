@@ -1,3 +1,5 @@
+// https://github.com/radix-ui/primitives/tree/main/packages/react/dialog/src
+
 import { styled, keyframes } from "../stitches.config";
 import { useState } from "react";
 import { blackA } from "@radix-ui/colors";
@@ -40,6 +42,7 @@ function Root({ children, ...props }) {
 
 const StyledContent = styled(DialogPrimitive.Content, {
   backgroundColor: "$sage12",
+  color: "$sage1",
   borderRadius: 6,
   boxShadow:
     "hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px",
@@ -122,19 +125,16 @@ const Box = styled("div", {});
 
 const SignUp = () => {
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [hasBeenSubmitted, setHasBeenSubmitted] = useState(false);
 
-  const submit = async () => {
-    setLoading(true);
-    if (!name || !email)
-      alert("Bitte gib deinen Namen und deine eMail-Adresse ein.❤");
+  const submit: React.FormEventHandler<HTMLFormElement> = async (event) => {
+    event.preventDefault();
+    setIsLoading(true);
+    if (!name) alert("Bitte gib deinen Namen und deine eMail-Adresse ein.❤");
 
-    const { status } = await fetch("/api/signup", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email }),
+    const { status } = await fetch("/api/dummy", {
+      method: "GET",
     });
 
     if (status === 200) {
@@ -197,15 +197,6 @@ const SignUp = () => {
                       onChange={(e) => setName(e.target.value)}
                     />
                   </Fieldset>
-                  <Fieldset>
-                    <Label htmlFor="email">eMail Adresse</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
-                  </Fieldset>
                   <Box
                     css={{
                       display: "flex",
@@ -213,8 +204,8 @@ const SignUp = () => {
                       justifyContent: "flex-end",
                     }}
                   >
-                    <Button type="submit" disabled={loading}>
-                      Sagt Bescheid
+                    <Button type="submit" disabled={isLoading}>
+                      {isLoading ? "..." : "Sagt Bescheid" }
                     </Button>
                   </Box>
                 </form>

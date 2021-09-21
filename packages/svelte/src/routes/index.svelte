@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Alert from '../components/Alert.svelte';
 	import Icon from '../components/Icon.svelte';
+	import SignUp from '../components/SignUp.svelte';
 	import Button from '../components/Button.svelte';
 	import SellingPoint from '../components/SellingPoint.svelte';
 	import SellingPointLarge from '../components/SellingPointLarge.svelte';
@@ -20,6 +21,7 @@
 	<title>Welcome</title>
 </svelte:head>
 
+
 <div class="bg-gradients">
 	<div class="theme-switch">
 		<div on:click={toggle}>
@@ -34,7 +36,7 @@
 		<h1>Mal wieder Lust auf &apos;ne richtige Frisur?</h1>
 		<h2>Dann komm zu uns. Leipzig’s erster Friseur aus der Zukunft. Alles digital, alles gut.</h2>
 		<div class="cta-box" id="cta-box">
-			<Button>Termin buchen</Button>
+			<SignUp />
 			<a href="#about"><Button isOutlined>Über uns</Button></a>
 		</div>
 		<div class="alert-box">
