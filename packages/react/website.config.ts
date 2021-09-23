@@ -37,76 +37,80 @@ import {
 } from "@modulz/radix-icons";
 
 export const META = {
-  name: "Dein Friseur",
-  address1: "Breite Straße 12",
-  address2: "04519 Leipzig",
+  headline: "Looking for a real hairstyle?",
+  subheadline:
+    "We mean a real one. One with which even coding works again. If so, let's talk!",
+  aboutButton: "Tell me more",
+  signupButton: "Take my money...",
+  alert: "We are getting ready for takeoff. Let us inform you when it starts.",
+  callToAction: "Already decided? Then just book an appointment.",
 };
 
 export const UNIQUESELLINGPOINTS = [
   {
     headline: "Digital",
     description:
-      "Bei uns ist außer das Friseur-Handwerk alles digital. Von der Terminbuchung bis zur Bezahlung. So haben wir mehr Zeit für das wichtigste. Dich.",
+      "Ever heard of a digital haircut? No? We got it! We use state of the art and cutting edge tech and AI (sure, AI) to bring you your favorite haircut right through your screen.",
     Icon: RocketIcon,
   },
   {
-    headline: "Echte Beratung",
+    headline: "Real advice",
     description:
-      "Bei uns gibts kein “Wie viel Millimeter sollen es denn sein?” Wir gehen auf dich ein und finden genau die richtige Frisur für dich.",
+      "We now more that just a hair trimmers. We analyze you and your lifestyle and finde the right haircut. Futuristic like the mane of Alf or a more conservative haircut like Yoda?",
     Icon: PersonIcon,
   },
   {
-    headline: "Friseur Handwerk",
+    headline: "Hairdresser craft",
     description:
-      "Einmal gelernt, für immer beherscht? Nope. Unsere Friseure bilden sich ständig weiter. Immer auf der Suche das Handwerk zu meistern.",
+      "Learned once, mastered forever? Nope. Our AI are constantly learning. Machine Learning, you know?",
     Icon: BackpackIcon,
   },
   {
-    headline: "Kein Shishi",
+    headline: "Just a haircut",
     description:
-      "Bei uns bekommst du genau das was du brauchst. Wir sind kein Wellness-Tempel der dir irgendwelche Cremes aufschatzen will.",
+      "With us you get exactly what you need. We are not a wellness temple that wants to give you some creams. Just some AI that cuts hair. No big deal!",
     Icon: CrumpledPaperIcon,
   },
 ];
 
 export const ABOUTUSPOINTS = [
   {
-    headline: "Die Bezahlung bei Friseuren ist Mist.",
+    headline: "The pay at hairdressers is crap.",
     tag: "Digital",
     description: [
-      "Vor jedem Friseurbesuch noch mal das Kleingeld checken. Und Trinkeld via Kartenzahlung geben geht nicht. Oder erstmal anrufen ob es noch einen Termin gibt?",
-      "Das liegt daran, weil die meisten Friseure gammlige Kassensysteme haben oder Abrechnungstools die keiner versteht.",
-      "Bei uns alles kein Problem. Bezahlung via PayPal? Vorher oder direkt bei uns? Trinkgeld direkt drauf? Machen wir!",
+      "Before each visit to the hairdresser, check your change again. And give tip via card payment does not work. Or call first whether there is still an appointment?",
+      "That's because most hairdressers have miserable POS systems or billing tools that no one understands.",
+      "With us all no problem. Payment via Ethereum? Before or directly with us? Tip directly on it? We do!",
     ],
     bulletPoints: [
-      "Bargeldlose Bezahlung, ob bei uns oder vorher.",
-      "PayPal, Karte, Apple-/Google Pay.",
+      "Cashless payment, whether with us or before.",
+      "Crypto, NFTs, PayPal, Apple-/Google Pay.",
     ],
   },
   {
-    headline: "Beratung sollte Ehrensache sein und nicht lästig.",
-    tag: "Echte Beratung",
+    headline: "Consulting should be a matter of honor and not a nuisance.",
+    tag: "Real consulting",
     description: [
-      "Bist du ein Mann? Dann kennst du die Frage sicher: “Wie viel Millimeter sollen es denn sein? Als Frau hattest du vielleicht schon mal das Problem: Im bekommst eine Frisur die für den Moment mal gut aussieht, sobald du aber Duschen gehst ist alles futsch.",
-      "Das liegt daran, weil du oft gar nicht richtig beraten wirst.",
-      "Unsere Fragenkatalog umfasst Dinge wie: Bist to total fancy oder magst du es eher minimalistisch? Wie viel Zeit nimmst du dir für deine Haare?",
+      "Are you a man? Then you know the question: 'How many millimeters should it be?' As a woman you might have had the problem: You get a hairstyle that looks good for the moment, but as soon as you take a shower it's all gone.",
+      "That's because you often don't get proper advice at all.",
+      "Our machines know you even before you contact us. - We just analyzed your browser history. Are you totally fancy or do you like it more minimalistic? How much time do you take for your hair? We now it!",
     ],
     bulletPoints: [
-      "Individuelle Beratung um die passende Frisur zu finden.",
-      "Wir merken uns deine Wünsche, sodass wir von Mal zu Mal besser und du glücklicher wirst.",
+      "Individual consultation to find the right hairstyle.",
+      "We remember your wishes so that we get better every time and you get happier.",
     ],
   },
   {
-    headline: "Wir lernen nie aus um dir das beste Handwerk bieten zu können.",
-    tag: "Friseur Handwerk",
+    headline: "We never stop learning to offer you the best craftsmanship.",
+    tag: "Hairdresser craft",
     description: [
-      "Viele Friseure kennen aktuelle Trends oder sogar klassische Schnitte nicht.",
-      "Das liegt daran, weil oft nicht genügend für die Weiterbildung der Friseure getan wird.",
-      "Bei uns bekommt jeder die Chance sich individuell oder im Team weiterzubilden.",
+      "Many hairdressers do not know current trends or even classic cuts.",
+      "This is because often not enough is done for the continuing education of hairdressers.",
+      "With us, our AI has the chance to develop individually or as part of a team. At night ofcourse.",
     ],
     bulletPoints: [
-      "Top ausgebildete Freuseure die ihr Handwerk beherschen.",
-      "Weiter- und Ausbildung gehört zu unseren täglichen Aufgaben.",
+      "Top trained AI who master their craft.",
+      "Further education and training are part of our nightly tasks.",
     ],
   },
 ];

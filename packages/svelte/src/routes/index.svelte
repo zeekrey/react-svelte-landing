@@ -6,7 +6,7 @@
 	import SellingPoint from '../components/SellingPoint.svelte';
 	import SellingPointLarge from '../components/SellingPointLarge.svelte';
 
-	import { UNIQUESELLINGPOINTS, ABOUTUSPOINTS } from '../../website.config';
+	import { UNIQUESELLINGPOINTS, ABOUTUSPOINTS, META } from '../../website.config';
 
 	let theme: 'light-theme' | 'dark-theme' = 'dark-theme';
 	let ref
@@ -33,15 +33,15 @@
 		</div>
 	</div>
 	<main class="stage stage-padding">
-		<h1>Mal wieder Lust auf &apos;ne richtige Frisur?</h1>
-		<h2>Dann komm zu uns. Leipzig’s erster Friseur aus der Zukunft. Alles digital, alles gut.</h2>
+		<h1>{META.headline}</h1>
+		<h2>{META.subheadline}</h2>
 		<div class="cta-box" id="cta-box">
 			<SignUp />
-			<a href="#about"><Button isOutlined>Über uns</Button></a>
+			<a href="#about"><Button isOutlined>{META.aboutButton}</Button></a>
 		</div>
 		<div class="alert-box">
 			<Alert
-				>Wir machen uns gerade startklar. Lass dich informieren wenn’s losgeht.
+				>{META.alert}
 				<Icon name="arrowRightIcon" style="padding-left: var(--space2)" />
 			</Alert>
 		</div>

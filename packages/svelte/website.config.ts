@@ -28,6 +28,15 @@ export const seo = {
     cardType: "summary_large_image",
   },
 };
+
+export const META = {
+	headline: "Mal wieder Lust auf &apos;ne richtige Frisur?",
+	subheadline:
+	  "Dann komm zu uns. Leipzig’s erster Friseur aus der Zukunft. Alles digital, alles gut.",
+	aboutButton: "Über uns",
+	alert: " Wir machen uns gerade startklar. Lass dich informieren wenn’s losgeht."
+	};
+
 export const UNIQUESELLINGPOINTS = [
 	{
 		headline: 'Digital',

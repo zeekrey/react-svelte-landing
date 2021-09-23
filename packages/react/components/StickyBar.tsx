@@ -2,6 +2,7 @@ import { styled } from "../stitches.config";
 import { useIntersectionObserver } from "../util/hooks";
 
 import SignUp from "./SignUp";
+import { META } from "../website.config";
 
 const Wrapper = styled("div", {
   position: "fixed",
@@ -58,7 +59,7 @@ const StickyBar: React.FunctionComponent<{
 
   return (
     <Wrapper shouldBeVisible={!entry?.isIntersecting}>
-      <Text>Schon entschieden? Dann buch doch einfach mal einen Termin.</Text>
+      <Text>{META.callToAction}</Text>
       <SignUp />
     </Wrapper>
   );

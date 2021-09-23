@@ -6,6 +6,7 @@ import { blackA } from "@radix-ui/colors";
 import { Cross2Icon } from "@modulz/radix-icons";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import Image from "next/image";
+import { META } from "../website.config";
 
 import Button from "./Button";
 
@@ -144,7 +145,7 @@ const SignUp = () => {
 
   return (
     <Dialog>
-      <Button as={DialogTrigger}>Termin buchen</Button>
+      <Button as={DialogTrigger}>{META.signupButton}</Button>
       <DialogContent>
         <Box css={{ display: "flex" }}>
           <Box

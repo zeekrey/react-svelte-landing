@@ -97,11 +97,8 @@ const Home: NextPage = () => {
               paddingTop: 100,
             }}
           >
-            <Headline>Mal wieder Lust auf &apos;ne richtige Frisur?</Headline>
-            <SubHeadline>
-              Dann komm zu uns. Leipzig’s erster Friseur aus der Zukunft. Alles
-              digital, alles gut.
-            </SubHeadline>
+            <Headline>{META.headline}</Headline>
+            <SubHeadline>{META.subheadline}</SubHeadline>
             <Box
               ref={ref}
               css={{
@@ -112,15 +109,14 @@ const Home: NextPage = () => {
               <SignUp />
               <Link href="#about" passHref>
                 <Button as="a" outlined>
-                  Über uns
+                  {META.aboutButton}
                 </Button>
               </Link>
             </Box>
           </Box>
           <Box css={{ display: "grid", placeContent: "center" }}>
             <Alert role="alert" css={{ svg: { marginLeft: 12 } }}>
-              Wir machen uns gerade startklar. Lass dich informieren wenn’s
-              losgeht.
+              {META.alert}
               <ArrowRightIcon />
             </Alert>
           </Box>
@@ -146,19 +142,12 @@ const Home: NextPage = () => {
             />
           ))}
         </Box>
-        <SectionHeadline id="about">Über uns</SectionHeadline>
+        <SectionHeadline id="about">{META.aboutButton}</SectionHeadline>
         {ABOUTUSPOINTS.map((aboutUsPoint) => (
           <Box key={aboutUsPoint.tag} css={{ padding: "40px $5" }}>
             <SellingPointLarge {...aboutUsPoint} />
           </Box>
         ))}
-        <Box css={{ display: "flex", padding: "$5" }}>
-          <Box css={{ flex: 1, color: "$sage12" }}>
-            <h4>{META.name}</h4>
-            <div>{META.address1}</div>
-            <div>{META.address2}</div>
-          </Box>
-        </Box>
       </Box>
     </>
   );
